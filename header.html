@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            #menubar {
+                background-color: rgb(69, 151, 165);
+                height: 100vh;
+                padding: 0px;
+                margin: 0px;
+                width: 100%;
+                display: block;
+            }
+            .menubartitle  {
+                margin-top: 5px;
+                margin-right: 5mm;
+                margin-left: 5mm;
+                margin-bottom: 30px;
+                padding: 2px;
+                font-size: 100%;
+                display: inline-block;
+                color: #ffffff;
+            }
+
+            .menubox{
+                display: inline-block;
+                padding:0; margin-top:0; margin-left: 2px; margin-right: 2px;
+                background-color: #776cc0;
+                width: 100px;
+                height: 100%;
+                position: relative;
+            }
+            .menuitemtext{
+                font-size: 200%;
+                display: inline-block;
+                color:white;
+                width: 100%;
+                height: 100%;
+                text-align: center;  
+                margin-top: calc(50vh - 1.3ex); 
+                margin-bottom: 0%;
+                text-decoration: none;
+                position: relative;
+            }
+            .menubox:hover{
+                background-color: #24167c;
+
+            }
+        </style>
+    </head>
+    <body style="margin: 0px; padding: 0px;">
+        <div style="margin: 0px; padding: 0px;" id = "menubar">
+                <a id = "headingtitle-large"    class = "menubartitle" >Welcome to Closet Servers</a>
+                <a id = "headingtitle-small"    class = "menubartitle" >Closet Server</a>
+                <div class = "menubox" ><a href="/home.html" target="body"  class="menuitemtext">Home</a></div>
+                <div class = "menubox" ><a href="images/"    target="body"  class="menuitemtext">Images</a></div>
+                <div class = "menubox" ><a href="test/"      target="body"  class="menuitemtext">test</a></div>
+        </div>
+    </body>
+</html>
