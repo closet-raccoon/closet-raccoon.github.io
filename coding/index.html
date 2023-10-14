@@ -24,15 +24,21 @@
                 overflow-y: scroll;
                 overflow-x: hidden;
             }
-            .display .card{
+            
+            .display .card img{
                 width: 98%;
                 height: 65%;
                 object-fit: contain;
                 display: block;
+                background-color: rgba(211, 57, 57, 0.164);
+            }
+            .display .card{
+                
             }
             .display .card-header {
                 width: 100%;
                 display: block;
+                margin-top: 6px;
                 margin-left: 9px;
                 font-size: larger;
                 
@@ -51,7 +57,7 @@
         <table class = "card-table">
             <tr>
                 <td><div class = "display">
-                    <a href="ffmpegcompresser/" target="body" style="display: block;" ><img src="ffmpegcompresser/displaycard.webp"  class = "card"/></a>
+                    <a href="ffmpegcompresser/" target="body"  class = "card" style="display: block;" ><img src="ffmpegcompresser/displaycard.webp"  /></a>
                     <a class = "card-header">FFmpeg Powered Compressor Script</a>
                     <p class = "card-text">Console Script front end for FFmpeg compressing and basic remuxing for quick and easy video conversion.  Perfect for making transportable video files for applications like discord, you can also set a max file size to automaticly cut the video when it gets to large.  Aswell as trimming video by selecting starting time and ending times.  The FFmpeg base support hardware accelerated AV1 and HEVC encoding on NVIDIA and Intel GPUs and you can select and update FFmpeg manualy to support more as the FFmpeg isn't Embedded.  FFmpeg must be downloaded manually from  <a href="https://FFmpeg.org">FFmpeg.org</a></p>
                 </div></td>
