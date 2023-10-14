@@ -7,54 +7,80 @@
         <link rel="shortcut icon" href="../resources/web2.png" />
         <style>
 
-            table {
+            table.card-table {
                 width: 100%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
             td {
                 width: 33.33%;
                 position: relative;
+
             }
             td .display {
                 aspect-ratio: 1 / 1 ;
                 background: rgb(98, 38, 110);
                 margin: 2px;
-                padding: 4px
+                padding: 4px;
+                overflow-y: scroll;
+                overflow-x: hidden;
             }
             .display .card{
                 width: 98%;
                 height: 65%;
                 object-fit: contain;
+                display: block;
+            }
+            .display .card-header {
+                width: 100%;
+                display: block;
+                margin-left: 9px;
+                font-size: larger;
+                
             }
             .display .card-text {
                 margin-left: 9px;
+                display: block;
+                overflow: scroll;
+                margin-bottom: 0px;
             }
         </style>
     </head>
     
     <!--<iframe class = "menuframe" src="../header.html" frameborder="0" target="_parent" ></iframe>-->
     <body style="margin: 0px; padding: 10px;">
-        <table >
+        <table class = "card-table">
             <tr>
                 <td><div class = "display">
-                    <img src="ffmpegcompressor\card.avif" class = "card"/>
-                    <a class = "card-text">Avif</a>
+                    <img src="imagecards/ffmpegcompresser.webp" class = "card"/>
+                    <a class = "card-header">FFmpeg Powered Compressor Script</a>
+                    <p class = "card-text">Console Script front end for FFmpeg compressing and basic remuxing for quick and easy video conversion.  Perfect for making transportable video files for applications like discord, you can also set a max file size to automaticly cut the video when it gets to large.  Aswell as trimming video by selecting starting time and ending times.  The FFmpeg base support hardware accelerated AV1 and HEVC encoding on NVIDIA and Intel GPUs and you can select and update FFmpeg manualy to support more as the FFmpeg isn't Embedded.  FFmpeg must be downloaded manually from  <a href="https://FFmpeg.org">FFmpeg.org</a></p>
                 </div></td>
                 <td><div class = "display">
-                    <img src="ffmpegcompressor\card2.avif" class = "card"/>
-                    <a class = "card-text">Avif first test</a>
+                    <img src="imagecards/ffmpegcompresser.webp" class = "card"/>
+                    <a class = "card-header">Blank</a>
+                    <p class = "card-text">Blank</p>
                 </div></td>
                 <td><div class = "display">
-                    <img src="ffmpegcompressor\MilkySecondShootout.avif" class = "card"/>
-                    <a class = "card-text">Avif</a>
+                    <img src="imagecards/ffmpegcompresser.webp" class = "card"/>
+                    <a class = "card-header">Blank</a>
+                    <p class = "card-text">Blank</p>
                 </div></td>
-            </tr>
             <tr>
                 <td><div class = "display">
-                    <img src="ffmpegcompressor\card.webp" class = "card"/>
-                    <a class = "card-text">Webp</a>
+                    <img src="imagecards/ffmpegcompresser.webp" class = "card"/>
+                    <a class = "card-header">Blank</a>
+                    <p class = "card-text">Blank</p>
                 </div></td>
-                <td><div class = "display">test</div></td>
-                <td><div class = "display">test</div></td>
+                <td><div class = "display">
+                    <img src="imagecards/ffmpegcompresser.webp" class = "card"/>
+                    <a class = "card-header">Blank</a>
+                    <p class = "card-text">Blank</p>
+                </div></td>
+                <td><div class = "display">
+                    <img src="imagecards/ffmpegcompresser.webp" class = "card"/>
+                    <a class = "card-header">Blank</a>
+                    <p class = "card-text">Blank</p>
+                </div></td>
             </tr>
         </table>
     </body>
