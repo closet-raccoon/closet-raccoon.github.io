@@ -1,6 +1,6 @@
 @media not print{
     :root{
-        background-image: url("resources/backdrop.png");
+        background-image: url("resources/backdrop.webp");
     }
     
     #warn {
@@ -17,7 +17,7 @@
     @media (prefers-color-scheme: dark) {
         :root {
             color-scheme: dark;
-            background-image: url("resources/backdrop-dark.png");
+            background-image: url("resources/backdrop-dark.webp");
         }
         #warn {
             color:rgb(255, 36, 36);
