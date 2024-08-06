@@ -67,10 +67,6 @@
     margin: 0px;
 }
 
-img {
-    width:30%;height:30%;
-    padding: 1%;
-}
 a:hover {
     border: #ffffff;
 }
@@ -83,10 +79,16 @@ a:hover {
     overflow: hidden; 
 }
 
+.DisplayImg {
+    width: 31%;
+    padding: 1%;
+    display: inline-block;
+}
 
-@media only screen and (max-aspect-ratio: 4/3), screen and (width < 600)  {
+
+@media only screen and (max-aspect-ratio: .78) {
     .DisplayImg {
-        width:85%;height:70%;
+        width:98%;
         padding: 1%;
         display: block;
     }
