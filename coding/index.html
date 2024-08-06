@@ -58,7 +58,7 @@
         <div style="margin: 0px; padding: 0px;" id = "menubar">
             <div class="menuboxcont">
                 <a class = "menubartitle" >Closet Server</a>
-                <div id="dropdown"><img src="/resources/test.svg"></img></div>
+                <div id="dropdown"><img id="chevron" src="/resources/test.svg"></img></div>
                 <div class = "menubox" ><a href="/" class="menuitemtext">Home</a></div>
                 <div class = "menubox" ><a href="https://cdn.closetraccoon.com"      target="_parent"  class="menuitemtext">Portfolio</a></div>
                 <div class = "menubox" ><a href="/images/" class="menuitemtext">Astro</a></div>
@@ -85,9 +85,11 @@
         document.getElementById("dropdown").addEventListener("click",function(){
             clicked = !clicked       
             if (clicked){
-                $(".menubox").css("display","block") 
+                $(".menubox").css("display","block")
+                $("#chevron").css("rotate","180deg")
             }else{
-                $(".menubox").css("display","none") 
+                $(".menubox").css("display","none")
+                $("#chevron").css("rotate","0deg")
             }
 
         })

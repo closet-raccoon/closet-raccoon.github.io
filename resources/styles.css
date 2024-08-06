@@ -85,6 +85,9 @@ a:hover {
     display: inline-block;
 }
 
+#chevron{
+    transition: 200ms;
+}
 
 @media only screen and (max-aspect-ratio: .78) {
     .DisplayImg {
