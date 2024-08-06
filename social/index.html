@@ -8,6 +8,7 @@
         <style>
              div.centerbox {
                 margin-left: 15%;
+                margin-top: 10px;
                 padding: 0px;
                 border-color: aquamarine;
                 border-radius: 3px;
@@ -47,7 +48,7 @@
                     padding: 0px;
                     border-width: 1px;
                     border-style: solid;
-                    border-color: rgba(255,255,255,255);
+                    border-color: var(--basic);
 
                 }
                 .ListElement img{
@@ -73,6 +74,7 @@
                     font-weight: 300;
                     font-size: 100px;
                     text-align: left;
+                    color:var(--primary-800);
                 }
 
                 .text .body{
@@ -85,6 +87,7 @@
                     height: 100px;
                     width: 100%;
                     font-style: italic  ;
+                    color:var(--primary-800);
                 }
                 @media only screen and (max-aspect-ratio: 4/3), screen and (width < 600)  {
                 div.centerbox {
@@ -102,7 +105,18 @@
     </head>
     
     <!--<iframe class = "menuframe" src="../header.html" frameborder="0" target="_parent" ></iframe>-->
-    <body style="margin: 0px; padding: 10px; ">
+    <body style="margin: 0px; padding: 0px; ">
+        <div style="margin: 0px; padding: 0px;" id = "menubar">
+            <div class="menuboxcont">
+                <a class = "menubartitle" >Closet Server</a>
+                <div id="dropdown"><img src="/resources/test.svg"></img></div>
+                <div class = "menubox" ><a href="/home.html" class="menuitemtext">Home</a></div>
+                <div class = "menubox" ><a href="https://cdn.closetraccoon.com"      target="_parent"  class="menuitemtext">Portfolio</a></div>
+                <div class = "menubox" ><a href="/images/" class="menuitemtext">Astro</a></div>
+                <div class = "menubox" ><a href="/social/" class="menuitemtext">Social</a></div>
+                <div class = "menubox" style="display: none;"><a href="/coding/" class="menuitemtext">Coding</a></div>
+            </div>
+        </div>
         <div class="centerbox">
             <div class="ImagedList">
                 <a class="ListElement" target="_blank" href="https://discord.gg/dQtmCKW9AC">

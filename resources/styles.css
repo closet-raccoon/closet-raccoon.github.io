@@ -19,10 +19,12 @@
     overflow-x: visible;
     overflow-y: visible;
     min-height: 3%;
+    font-size: 0;
 }
 .menubartitle  {
     padding: 2px;
-    font-size: 200%;
+    padding-right: 10px;
+    font-size: 30px;
     display: inline-block;
     color:var(--text);
 }
@@ -35,6 +37,7 @@
     border-bottom-width: 2px;
     border-color: transparent;
     transition: 0.4s;
+    font-size: initial;
 }
 .menubox:hover{
     background-color: #5b2c5f;
