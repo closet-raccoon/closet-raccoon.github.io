@@ -5,6 +5,7 @@
         <title>Closet Raccoon Image Resources</title>
         <link rel="stylesheet" href="/resources/styles.css">
         <link rel="shortcut icon" href="/resources/web2.webp" />
+        <script src="/resources/jquery.min.js"></script>
        
     </head>
     
@@ -32,5 +33,17 @@
               <a href = "jpeg/MilkySecondShootout.jpg"  target="_blank"> <img  class="DisplayImg" src = "avif/MilkySecondShootout.avif"    type="image/avif" alt = "A Milky Way photo without a bottom obstruction, still working on the editing on this file"/></a>
         </div>
     </body>
+    <script>
+        var clicked = false
+        document.getElementById("dropdown").addEventListener("click",function(){
+            clicked = !clicked       
+            if (clicked){
+                $(".menubox").css("display","block") 
+            }else{
+                $(".menubox").css("display","none") 
+            }
+
+        })
+    </script>
 </html>
 

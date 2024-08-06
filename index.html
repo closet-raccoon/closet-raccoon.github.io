@@ -5,6 +5,7 @@
         <title>Closet Raccoon</title>
         <link rel="stylesheet" href="/resources/styles.css">
         <link rel="shortcut icon" href="/resources/web2.webp" />
+        <script src="/resources/jquery.min.js"></script>
        
     </head>
     <body style="margin: 0px; padding: 0px; height: 100vh; width: 100%;">
@@ -28,9 +29,15 @@
 
     </body>
     <script>
+        var clicked = false
         document.getElementById("dropdown").addEventListener("click",function(){
-            var list = document.getElementsByClassName("menubox")
-            list:syle
+            clicked = !clicked       
+            if (clicked){
+                $(".menubox").css("display","block") 
+            }else{
+                $(".menubox").css("display","none") 
+            }
+
         })
     </script>
 </html>

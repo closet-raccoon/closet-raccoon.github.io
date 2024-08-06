@@ -5,6 +5,7 @@
         <title>Closet Raccoon Coding Projects</title>
         <link rel="stylesheet" href="/resources/styles.css">
         <link rel="shortcut icon" href="/resources/web2.webp" />
+        <script src="/resources/jquery.min.js"></script>
         <style>
 
             table.card-table {
@@ -79,4 +80,16 @@
                 </div></td>
         </table>
     </body>
+    <script>
+        var clicked = false
+        document.getElementById("dropdown").addEventListener("click",function(){
+            clicked = !clicked       
+            if (clicked){
+                $(".menubox").css("display","block") 
+            }else{
+                $(".menubox").css("display","none") 
+            }
+
+        })
+    </script>
 </html>
