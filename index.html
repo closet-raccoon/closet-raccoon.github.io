@@ -7,8 +7,31 @@
         <link rel="shortcut icon" href="/resources/web2.webp" />
        
     </head>
-    <body style="margin: 0px; padding: 0px;">
-        <iframe  name="header" class = "menuframe" src="header.html" frameborder="0"></iframe>
-        <iframe  name="body"   class = "bodyframe" src="home.html"   frameborder="0"></iframe>
+    <body style="margin: 0px; padding: 0px; height: 100vh; width: 100%;">
+        <div style="margin: 0px; padding: 0px;" id = "menubar">
+            <div class="menuboxcont">
+                <a class = "menubartitle" >Closet Server</a>
+                <div id="dropdown"><img src="/resources/test.svg"></img></div>
+                <div class = "menubox" ><a href="/home.html" target="body"  class="menuitemtext">Home</a></div>
+                <div class = "menubox" ><a href="https://cdn.closetraccoon.com"      target="_parent"  class="menuitemtext">Portfolio</a></div>
+                <div class = "menubox" ><a href="images/"    target="body"  class="menuitemtext">Astro</a></div>
+                <div class = "menubox" ><a href="social/"      target="body"  class="menuitemtext">Social</a></div>
+                <div class = "menubox" style="display: none;"><a href="coding/"      target="body"  class="menuitemtext">Coding</a></div>
+            </div>
+        </div>
+        <body style="margin: 0px; padding: 0px; width: 500px;">
+            <p>A Website for hosting images and videos for my many hobbies and passions.</p>
+            <p>And yes im aware my front end is dog shit im very aware.</p>
+            <div class="footer">
+                <p>2023-2024 Closet Raccoon</p>
+                <p>All rights reserved</p>
+            </div>
+        </body>
+
     </body>
+    <script>
+        document.getElementById("dropdown").addEventListener("click",function(){
+            var list = document.getElementsByClassName("menubox")
+        })
+    </script>
 </html>

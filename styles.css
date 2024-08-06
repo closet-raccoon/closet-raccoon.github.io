@@ -1,3 +1,79 @@
+.menuboxcont{
+    margin: auto;
+    display: block;
+    width:fit-content;
+
+}
+#menubar {
+    background-color: rgb(114, 153, 160);
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: visible;
+    min-height: 3%;
+}
+.menubartitle  {
+    padding: 2px;
+    font-size: 200%;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.menubox{
+    display: inline-block;
+    width: fit-content; height: 100%;
+    background-color: #6c6985;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: transparent;
+    transition: 0.4s;
+}
+.menubox:hover{
+    background-color: #5b2c5f;
+    border-color: #200fbd;
+}
+    
+.menuitemtext{
+    font-size: 200%;
+    padding: 0 5px;
+    color:white;
+    text-align: center;  
+    position: relative;
+    text-decoration:none;
+}
+.menuboxcont #dropdown {
+    display: none;
+}
+
+
+.footer{
+    display: block;
+    position: absolute;
+    bottom: 1%;    
+}
+.footer a{
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    width:30%;height:30%;
+    padding: 1%;
+}
+a:hover {
+    border: #ffffff;
+}
+
+
+.bodyframe {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden; 
+}
+
 @media not print{
     :root{
         background-image: url("resources/backdrop.webp");
@@ -29,56 +105,26 @@
 
 
 }
-
-#headingtitle-small{
-    display: none;
-}
-#headingtitle-large{
-    display: inline;
-}
-.footer{
-    display: block;
-    height: 2vb;
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    margin-top: 95vb;
-    bottom: calc(2ex + 2vb);
-    left: 0;
-}
-.footer a{
-    padding: 0px;
-    margin: 0px;
-}
 @media only screen and (max-aspect-ratio: 4/3), screen and (width < 600)  {
-    #headingtitle-small{
-        display: inline;
-    }
-    #headingtitle-large{
-        display: none;
-    }
-    
-}
-
-img {
-    width:30%;height:30%;
-    padding: 1%;
-}
-a:hover {
-    border: #ffffff;
-}
-@media only screen and (max-aspect-ratio: 4/3), screen and (width < 600)  {
-    img {
+    .DisplayImg {
         width:85%;height:70%;
         padding: 1%;
         display: block;
     }
-}
-
-.bodyframe {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    height: 100vh;
-    overflow: hidden; 
+    .menubox{
+        display: none;
+        margin: auto; 
+    }
+    .menuboxcont #dropdown {
+        display: inline-block;
+        padding: 0 25px;
+        width:39px;
+    }
+    .menuboxcont #dropdown img {
+        display: block;
+        aspect-ratio: 1;
+        width:39px;
+        padding: 0;
+        
+    }
 }
