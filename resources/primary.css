@@ -1,7 +1,9 @@
 @media (prefers-color-scheme: light) {
     :root {
+        --backdrop: url("/resources/backdrop.webp");
         --text: #000000;
         --background: #ffffff;
+        --basic: #000000;
         --primary: #d460eb;
         --secondary: #161439;
         --accent: #6d6cc1;
@@ -15,9 +17,10 @@
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        background-image: url("/resources/backdrop-dark.webp");
+        --backdrop: url("/resources/backdrop-dark.webp");
         --text: #ffffff;
         --background: #000000;
+        --basic: #ffffff;
         --primary: #88149f;
         --secondary: #c8c6eb;
         --accent: #3f3e93;

@@ -1,3 +1,10 @@
+@import "/resources/primary.css";
+
+:root{
+    background-image: var(--backdrop) ;
+    color:var(--text);
+}
+
 .menuboxcont{
     margin: auto;
     display: block;
@@ -5,7 +12,7 @@
 
 }
 #menubar {
-    background-color: rgb(114, 153, 160);
+    background-color: var(--primary-200);
     padding: 0px;
     margin: 0px;
     width: 100%;
@@ -17,7 +24,7 @@
     padding: 2px;
     font-size: 200%;
     display: inline-block;
-    color: #ffffff;
+    color:var(--text);
 }
 
 .menubox{
@@ -65,7 +72,6 @@ a:hover {
     border: #ffffff;
 }
 
-
 .bodyframe {
     width: 100%;
     padding: 0px;
@@ -74,37 +80,7 @@ a:hover {
     overflow: hidden; 
 }
 
-@media not print{
-    :root{
-        background-image: url("resources/backdrop.webp");
-    }
-    
-    #warn {
-        color:rgb(185, 0, 0);
-    }
-    .menuframe {
-        border-bottom: 0.5mm solid #000000;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-        height: 50px;
-        overflow: hidden;
-    }
-    @media (prefers-color-scheme: dark) {
-        :root {
-            color-scheme: dark;
-            background-image: url("resources/backdrop-dark.webp");
-        }
-        #warn {
-            color:rgb(255, 36, 36);
-        }
-        .menuframe {
-            border-bottom: 0.5mm solid #ffffff;
-        }
-    }
 
-
-}
 @media only screen and (max-aspect-ratio: 4/3), screen and (width < 600)  {
     .DisplayImg {
         width:85%;height:70%;
