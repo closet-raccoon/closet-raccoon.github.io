@@ -6,19 +6,13 @@
         <link rel="stylesheet" href="/resources/styles.css">
         <link rel="shortcut icon" href="/resources/web2.webp" />
         <script src="/resources/jquery.min.js"></script>
+        <script src="/resources/menubar.js"></script>
+        <link href="cdn.closetraccoon.com" rel="dns-prefetch" />
+        <link rel="https://cdn.closetraccoon.com/index.html" rel="prefetch" />
        
     </head>
     <body style="margin: 0px; padding: 0px; height: 100vh; width: 100%;">
         <div style="margin: 0px; padding: 0px;" id = "menubar">
-            <div class="menuboxcont">
-                <a class = "menubartitle" >Closet Server</a>
-                <div id="dropdown"><img src="/resources/test.svg"></img></div>
-                <div class = "menubox" ><a href="/" class="menuitemtext">Home</a></div>
-                <div class = "menubox" ><a href="https://cdn.closetraccoon.com"      target="_parent"  class="menuitemtext">Portfolio</a></div>
-                <div class = "menubox" ><a href="/images/" class="menuitemtext">Astro</a></div>
-                <div class = "menubox" ><a href="/social/" class="menuitemtext">Social</a></div>
-                <div class = "menubox" style="display: none;"><a href="/coding/" class="menuitemtext">Coding</a></div>
-            </div>
         </div>
         <p>A Website for hosting images and videos for my many hobbies and passions.</p>
         <p>And yes im aware my front end is dog shit im very aware.</p>
@@ -29,6 +23,8 @@
 
     </body>
     <script>
+        
+        document.getElementById("menubar").innerHTML = bar
         var clicked = false
         document.getElementById("dropdown").addEventListener("click",function(){
             clicked = !clicked       

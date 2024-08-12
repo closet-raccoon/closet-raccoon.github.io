@@ -3,8 +3,9 @@
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
         <title>Closet Raccoon Coding Projects</title>
-        <link rel="stylesheet" href="../../styles.css">
+        <link rel="stylesheet" href="/resources/styles.css">
         <link rel="shortcut icon" href="/resources/web2.webp" />
+        <script src="/resources/menubar.js"></script>
         <style>
              div.centerbox {
                 margin-left: 15%;
@@ -38,6 +39,7 @@
                    padding: 1px;
                    margin: 1px;
                    margin-left: 25px;
+                   font-size: initial;
                 }
                 div.textfield .previewtext {
                    padding: 1px;
@@ -68,4 +70,21 @@
             </div>
         </div>  
     </body>
+
+    <script>
+        
+        document.getElementById("menubar").innerHTML = bar
+        var clicked = false
+        document.getElementById("dropdown").addEventListener("click",function(){
+            clicked = !clicked       
+            if (clicked){
+                $(".menubox").css("display","block")
+                $("#chevron").css("rotate","180deg")
+            }else{
+                $(".menubox").css("display","none")
+                $("#chevron").css("rotate","0deg")
+            }
+
+        })
+    </script>
 </html>
