@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="/resources/styles.css">
         <link rel="shortcut icon" href="/resources/web2.webp" />
         <script src="/resources/jquery.min.js"></script>
-        <script src="/resources/menubar.js"></script>
         <style>
 
             table.card-table {
@@ -71,20 +70,5 @@
                 </div></td>
         </table>
     </body>
-    <script>
-        
-        document.getElementById("menubar").innerHTML = bar
-        var clicked = false
-        document.getElementById("dropdown").addEventListener("click",function(){
-            clicked = !clicked       
-            if (clicked){
-                $(".menubox").css("display","block")
-                $("#chevron").css("rotate","180deg")
-            }else{
-                $(".menubox").css("display","none")
-                $("#chevron").css("rotate","0deg")
-            }
-
-        })
-    </script>
+    <script src="/resources/menubar.js"></script>
 </html>
