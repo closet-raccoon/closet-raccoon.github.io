@@ -89,6 +89,11 @@ a:hover {
     transition: 200ms;
 }
 
+@keyframes recieve {
+    from { width: 0 }
+    to { width: 100% }
+}
+
 @media only screen and (max-aspect-ratio: .78) {
     .DisplayImg {
         width:98%;
