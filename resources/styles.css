@@ -5,20 +5,29 @@
     color:var(--text);
 }
 
+#title {
+    color: var(--primary-800);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 .menuboxcont{
     margin: auto;
     display: block;
     width:fit-content;
 
 }
+
+
 #menubar {
     background-color: var(--primary-200);
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    overflow-x: visible;
-    overflow-y: visible;
-    min-height: 3%;
+
+    padding: 0;
+    margin: 10px auto;
+
+    width: 90%;
+    border-radius: 25px;
+
     font-size: 0;
 }
 .menubartitle  {
