@@ -5,7 +5,10 @@
         <title>Racc Redirect</title>
         <link rel="shortcut icon" href="/resources/web2.webp" />
         <script>
-            window.location.href = window.location.href.split("?")[1]
+            const query = window.location.href.split("?")[1]
+            if (query) {
+                window.location.href = query;
+            }
         </script>
     </head>
 </html>
